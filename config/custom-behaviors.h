@@ -1,0 +1,24 @@
+ 
+behaviors {
+        
+        /*
+         * Shifted Backspace deletes
+         *
+         * Usage: &mm_bspc_del
+         * Tap: Backspace
+         * Shift-Tap: Delete
+         */
+        mm_bspc_del: bspc_del {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    
+        rot_scrl: sensor_rotate_msc {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
+
+};
