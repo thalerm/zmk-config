@@ -85,7 +85,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&rot_msc SCRL_UP SCRL_DOWN>;
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
@@ -107,7 +107,7 @@
             >;
 
             sensor-bindings =
-                <&rot_msc SCRL_LEFT SCRL_RIGHT>,
+                <&trans>,
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
