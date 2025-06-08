@@ -1,13 +1,12 @@
- 
-behaviors {
-        
+/ {
+    behaviors {
         /*
-         * Shifted Backspace deletes
-         *
-         * Usage: &mm_bspc_del
-         * Tap: Backspace
-         * Shift-Tap: Delete
-         */
+        * Shifted Backspace deletes
+        *
+        * Usage: &mm_bspc_del
+        * Tap: Backspace
+        * Shift-Tap: Delete
+        */
         mm_bspc_del: bspc_del {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -20,5 +19,5 @@ behaviors {
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
         };
-
+    };
 };
